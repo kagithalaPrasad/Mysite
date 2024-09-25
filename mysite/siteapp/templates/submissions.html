@@ -1,0 +1,45 @@
+<!-- siteapp/templates/submissions.html -->
+ {% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submissions</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>All Submissions</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'view_submissions' %}">Submissions</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Submitted Data</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            {% for submission in submissions %}
+            <tr>
+                <td>{{ submission.name }}</td>
+                <td>&NonBreakingSpace;{{ submission.email }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No submissions yet.</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </main>
+
+    <footer>
+        <p>Contact: prasad20414@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- siteapp/templates/index.html -->
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Submission Form</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>User Submission Form</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'view_submissions' %}">View Submissions</a></li>  <!-- Link to submissions -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="{% url 'submit_form' %}" method="POST">
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact: prasad20414@gmail.com</p>
+    </footer>
+</body>
+</html>

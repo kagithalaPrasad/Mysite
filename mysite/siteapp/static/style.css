@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated to a professional font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8; /* Light background for improved readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Bootstrap primary color for a professional look */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Large title for visibility */
+    letter-spacing: 1px; /* Added letter spacing for elegance */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none; /* No bullet points */
+    padding: 0;
+    margin: 15px 0 0; /* Space above the navigation */
+}
+
+nav ul li {
+    display: inline-block; /* Allows for better alignment */
+    margin: 0 20px; /* Spacing between links */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500; /* Medium weight for subtlety */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover for attention */
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px;
+    max-width: 800px; /* Consistent width for professional look */
+    margin: 30px auto; /* Centered with space around */
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+/* Dynamic Content Section Styling */
+#dynamic-content {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e9ecef; /* Subtle background for dynamic content */
+    border-left: 5px solid #007bff; /* Emphasizing dynamic content */
+}
+
+/* Form Section Styling */
+#form-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Very light background for the form */
+    border-radius: 10px; /* Consistent rounding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: 600; /* Bold labels for clarity */
+    color: #343a40; /* Darker text for better visibility */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px; /* Increased padding for comfort */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ced4da; /* Light border color */
+    border-radius: 5px; /* Slight rounding */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff; /* Border color change on focus */
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff; /* Consistent button color */
+    color: #ffffff;
+    padding: 12px 20px; /* Comfortable padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+    font-weight: bold; /* Bold text for buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover for depth */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark footer for contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em; /* Smaller footer text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduced margin on mobile */
+    }
+
+    main {
+        padding: 20px; /* Less padding on mobile */
+    }
+}
